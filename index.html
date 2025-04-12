@@ -3,92 +3,77 @@
         <meta charset="UTF-8">
         <title>시험개에바</title>
 
-        <style>
-            body{
-                margin: 0;
-            }
-            
-            #header{
-                width: 800px;
-                margin: 20px auto;
-            }
+      <style>
+    body {
+        margin: 0;
+        font-size: 16px;
+    }
 
-            #header-cap{
-                font-size: 2.3em;
-                font-weight: 800;
-            }
+    #header,
+    #navigation ul,
+    #navigation p,
+    #contents,
+    #footer p {
+        width: 90%;
+        max-width: 800px;
+        margin: 20px auto;
+    }
 
-            #header-desc{
-                font-size: 1.5em;
-                font-style: oblique;
-            }
+    #header-cap {
+        font-size: 2.3em;
+        font-weight: 800;
+    }
 
-            #navigation{
-                border-bottom: 2px solid aqua;
-                border-top: 2px solid aqua;
-                background-color: aliceblue;
-                font-family: 궁서;
-            }
+    #header-desc {
+        font-size: 1.5em;
+        font-style: oblique;
+    }
 
-            #navigation a{
-                text-decoration: none;
-                color: cornflowerblue;
-            }
+    #navigation {
+        border-bottom: 2px solid aqua;
+        border-top: 2px solid aqua;
+        background-color: aliceblue;
+        font-family: 궁서;
+    }
 
-            #navigation a:hover{
-                color:red;
-            }
+    #navigation a {
+        text-decoration: none;
+        color: cornflowerblue;
+    }
 
-            #navigation a:active{
-                color:blueviolet;
-            }
+    #navigation a:hover {
+        color: red;
+    }
 
-            #navigation ul {
-                width: 800px;
-                margin: 10 auto;
-                overflow:hidden;
-                padding: 0px;
-                
-            }
-            
-            #navigation li {
-                list-style: none;
-                float: left;
-                margin-right: 10px;
-                font-size: 3em;
-                margin-right:60 ;
-            }
+    #navigation a:active {
+        color: blueviolet;
+    }
 
-            #navigation p {
-                font-size: 1.5em;
-                width: 800px;
-                margin: 0 auto;
-            }
+    #navigation ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px 0;
+        gap: 20px;
+    }
 
-            #contents{
-                width: 800px;
-                margin: 0 auto;
-                padding-bottom: 20px;
-            }
+    #navigation li {
+        list-style: none;
+        font-size: 2em;
+    }
 
-            #contents p{
-                font-family: 바탕;
-                color:crimson
-            }
+    #contents p {
+        font-family: 바탕;
+        color: crimson;
+        line-height: 1.6;
+    }
 
+    #footer {
+        padding: 20px;
+        border-top: 2px solid aqua;
+    }
+</style>
 
-            #footer{
-                padding: 20px;
-                border-top: 2px solid aqua;
-            }
-
-            #footer p {
-                font-family: 굴림;
-                width: 800px;
-                margin: 0 auto;
-            }
-
-        </style>
     </head>
     <body>
         <div id="header">
