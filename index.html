@@ -1,79 +1,132 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <title>시험개에바</title>
 
-      <style>
-    body {
-        margin: 0;
-        font-size: 16px;
-    }
+        <!-- 뷰포트 설정: 모바일 화면에 맞게 조정 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+        <style>
+            body {
+                margin: 0;
+                font-size: 16px;
+                font-family: 'Arial', sans-serif;
+            }
 
-    #header,
-    #navigation ul,
-    #navigation p,
-    #contents,
-    #footer p {
-        width: 90%;
-        max-width: 800px;
-        margin: 20px auto;
-    }
+            #header,
+            #navigation ul,
+            #contents,
+            #footer p {
+                width: 90%;
+                max-width: 800px;
+                margin: 20px auto;
+            }
 
-    #header-cap {
-        font-size: 2.3em;
-        font-weight: 800;
-    }
+            #header-cap {
+                font-size: 2.3em;
+                font-weight: 800;
+                text-align: center;
+            }
 
-    #header-desc {
-        font-size: 1.5em;
-        font-style: oblique;
-    }
+            #header-desc {
+                font-size: 1.5em;
+                font-style: oblique;
+                text-align: center;
+            }
 
-    #navigation {
-        border-bottom: 2px solid aqua;
-        border-top: 2px solid aqua;
-        background-color: aliceblue;
-        font-family: 궁서;
-    }
+            #navigation {
+                border-bottom: 2px solid aqua;
+                border-top: 2px solid aqua;
+                background-color: aliceblue;
+                font-family: 'Gungseo', serif;
+            }
 
-    #navigation a {
-        text-decoration: none;
-        color: cornflowerblue;
-    }
+            #navigation a {
+                text-decoration: none;
+                color: cornflowerblue;
+            }
 
-    #navigation a:hover {
-        color: red;
-    }
+            #navigation a:hover {
+                color: red;
+            }
 
-    #navigation a:active {
-        color: blueviolet;
-    }
+            #navigation a:active {
+                color: blueviolet;
+            }
 
-    #navigation ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px 0;
-        gap: 20px;
-    }
+            #navigation ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding: 10px 0;
+                gap: 20px;
+            }
 
-    #navigation li {
-        list-style: none;
-        font-size: 2em;
-    }
+            #navigation li {
+                list-style: none;
+                font-size: 1.8em;
+            }
 
-    #contents p {
-        font-family: 바탕;
-        color: crimson;
-        line-height: 1.6;
-    }
+            #contents p {
+                font-family: 'Batang', serif;
+                color: crimson;
+                line-height: 1.6;
+            }
 
-    #footer {
-        padding: 20px;
-        border-top: 2px solid aqua;
-    }
-</style>
+            #footer {
+                padding: 20px;
+                border-top: 2px solid aqua;
+                text-align: center;
+            }
+
+            /* 모바일 화면에서 글꼴 크기 및 레이아웃 조정 */
+            @media (max-width: 768px) {
+                body {
+                    font-size: 14px;
+                }
+
+                #header-cap {
+                    font-size: 2em;
+                }
+
+                #header-desc {
+                    font-size: 1.2em;
+                }
+
+                #navigation ul {
+                    flex-direction: column; /* 세로로 배치 */
+                    gap: 15px;
+                    padding: 10px 0;
+                }
+
+                #navigation li {
+                    font-size: 1.5em;
+                }
+
+                #contents p {
+                    font-size: 12px; /* 모바일에서 텍스트 크기 조정 */
+                }
+            }
+
+            /* 작은 화면에서 더 큰 모바일 지원 */
+            @media (max-width: 480px) {
+                #header-cap {
+                    font-size: 1.5em;
+                }
+
+                #header-desc {
+                    font-size: 1em;
+                }
+
+                #navigation li {
+                    font-size: 1.3em;
+                }
+
+                #footer {
+                    font-size: 12px;
+                }
+            }
+        </style>
 
     </head>
     <body>
@@ -87,19 +140,19 @@
                 <li><a href="https://www.instagram.com/reel/DHamURPywjZ/?igsh=aHZrZzNvcmdxZzM2">종</a></li>
                 <li><a href="https://www.instagram.com/share/BAGTQLvLG6">강</a></li>
                 <li><a href="https://www.instagram.com/share/BBN562bXFR">주</a></li>
-                <li><a href=https://www.instagram.com/share/_wHeW4vHt>세</a></li>
+                <li><a href="https://www.instagram.com/share/_wHeW4vHt">세</a></li>
                 <li><a href="https://www.instagram.com/share/BAI3H5DiTN">여</a></li>
             </ul>
             <p>글자를 눌러바^^</p>
         </div>
-        <div id=contents>
+        <div id="contents">
             <div id="gallery">
                 <h3>Gallery</h3>
-                <p>종강해야하잖아 종강해야하잖아 종강해야하잖아 사람들이지쳤잖아 힘들잖아그만해야하잖아이러면 안되는거잖아 그만 해야하잖아맞잖아지쳤잖아힘들잖아 괴롭잖아숨막히잖아 정신나갈거같잖아피로하잖아겁에 질렸잖아몽롱하잖아 고문당하는거같잖아불안하잖아 죽을거같잖아고통스럽잖아 미칠거같잖아숨이막히잖아 페가아프잖아그만해야하잖아 정신 나갈거같잖아 루나틱하잖아토할거같잖아구역질 이나올거같잖아 속 이뒤트는거같잖아비틀어질거같잖아 휘청거릴거샅 잖아어지 럽잖아배사아프잖아위가꼬이는거같잖아장이꼬이는거같; 온몸에쥐난거같잖아심장이아프잖아다들지쳤잖아다 들가려워 죽을거같잖아살증나잖아탈진할거같잖아그만해야하잖아 맞아 아니야그만해야해안해야해사람이힘들잖아 지쳤다잖아왜그래 도대체그만해야하잖아맞잖사람 이힘들잖아지쳤잖아미쳤잖아 그만해야지그만할때 됐잖아 맞잖아인간적으로인륜적으로유교적 으로역사적 으로 사상적으로교육적으로천륜적으로일괄적으로 능률적으로 철학적으로전통적으로정통적으로본격적으로 다본적으로 체계적으로서정적으로문학적으로본질적으로 근원적으로 기술적으로신호적으로심리적으로육체적으로 실질적으로 본질적으로체질적으로객관적으로직관적으로</p>
-                <p>#드가자 #드가자의신 #세상에드가자의신이있다면 #드가자고말해주고싶어 #이건당신께드갈메세지 #음정하나하나드가보자 #무엇이우리의드가는것인가 #뭐있나드가자노래하자 #이것이우리의드가는것이다 #드가자는우리의숨이니까 #드가자 #드가자의신 #세상에드가자의신이있다면 #드가자고말해주고싶어 #이건당신께드갈메세지 #음정하나하나드가보자 #무엇이우리의드가는것인가 #뭐있나드가자노래하자 #이것이우리의드가는것이다 #드가자는우리의숨이니까#드가자 #드가자의신 #세상에드가자의신이있다면 #드가자고말해주고싶어 #이건당신께드갈메세지 #음정하나하나드가보자 #무엇이우리의드가는것인가 #뭐있나드가자노래하자 #이것이우리의드가는것이다 #드가자는우리의숨이니까 #드가자 #드가자의신 #세상에드가자의신이있다면 #드가자고말해주고싶어 #이건당신께드갈메세지 #음정하나하나드가보자 #무엇이우리의드가는것인가 #뭐있나드가자노래하자 #이것이우리의드가는것이다 #드가자는우리의숨이니까</p>
-                <p>꺼지라했지(꺼지라했지)꺼지라했어(꺼지라했어)헤어지자했지(헤어지자했지)헤어지자했어(헤어지자했어)매일똑같은상황극복하긴노매일똑같은다툼멀어지는우리함께했던모든날이좋았어사랑이란틀안의거짓된공기추억의연속또추억의아픔더이상의고통은노쌓아왔던추억이바래진기억으로간직했던신뢰가희미해진허공으로너같은사람은너밖에없었어마음둘곳하나없는이세상속에하지만이젠굿바이너와나의너와나의영원한침묵이젠서로의아침으로킵고잉</p>
-                <p id="p3">토끼가 하는 말 깡총깡총깡총깡총깡총깡총깡총깡총깡총깡총깡총깡총깡총깡총깡총깡총깡총깡총깡총깡총깡총깡총깡총깡총깡총깡총깡총강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강종강</p>
-            </div>            
+                <p>종강해야하잖아 종강해야하잖아 종강해야하잖아 사람들이지쳤잖아 힘들잖아 그만해야하잖아...</p>
+                <p>#드가자 #드가자의신...</p>
+                <p>꺼지라했지(꺼지라했지)꺼지라했어...</p>
+                <p id="p3">토끼가 하는 말 깡총깡총깡총...</p>
+            </div>
             <div id="notices">
                 <h3>Notices</h3>
                 F학점주의
